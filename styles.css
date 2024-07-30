@@ -96,6 +96,10 @@ margin-bottom: 1em;
    color: #F9F9F9;
 }
 
+.container__secundario{
+   margin-bottom: -8em;
+}
+
 .secundario__botao{
    display: inline-block;
    margin-top: 1em;
@@ -118,6 +122,7 @@ margin-bottom: 1em;
 
 .dispositivos{
    text-align: center;
+   margin:  10em;
 }
 
 .dispositivos__titulo{
@@ -219,7 +224,8 @@ margin-bottom: 1em;
    }        
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (min-width: 681px) and (max-width: 999px){
+
    .container{
       margin-top: 6em;
       display: block;
@@ -275,27 +281,132 @@ margin-bottom: 1em;
    }
 
    .dispositivos{
-      margin-top: -7em;
+      margin: -7em 1em 0;
+      text-align: center;
    }
  
    .dispositivos__lista{
       display: block;
+      
    }
  .dispositivos__titulo{
-      font-size: 2.3rem;
+      font-size: 2.1rem;
    }
 
    .lista__item{
       font-size: 1.6rem;
    }        
-   
+
    .rodape{
-      margin-top: -2;
+      margin-top: -2;      
    }
+
    .lista__link a{
       font-size: 0.80rem;     
    }
+
    .rodape__texto{
    font-size: 0.70rem;
    }
 }
+
+@media screen and (max-width: 680px) {
+
+   .container__caixa{
+      margin: 3vh 2vh 8vh;
+   }
+   
+   .container {
+      max-width: 100%;
+      height: 100vh;
+      display: block;
+      background-image: none;  
+      text-align: center;
+      align-items: center;
+      overflow-x: hidden;          
+   }
+   
+   .container__titulo{
+      font-size: 1.55rem;         
+   }
+   
+   .container__imagem{
+      width: 40vh;
+      padding: 6em 0;      
+   }
+
+   .container__botao {
+      font-size: 1.165rem;
+      width: auto;
+      margin: auto;
+      margin-bottom: 0.3em
+   }
+
+   .secundario__imagem{
+      width: 50vh;
+      margin-left: 0;
+      
+   }
+
+   .secundario{      
+      margin: 0 0em;
+   }
+
+   .container__descricao{
+      margin-top: 1vh;
+      font-size: 1rem;
+   }
+
+   .descricao__titulo{
+      font-size: 2rem;
+   }
+   
+   .descricao__texto{       
+      font-size: 1rem;
+   }
+
+   .container__secundario{
+      margin: -20vh 0 25vh;
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .secundario__botao{    
+      margin-top: 3em;   
+   }
+
+   .dispositivos{
+      text-align: center;
+      margin: -6em 1em 0;
+   }
+
+   .dispositivos__titulo{
+      font-size: 2.1rem;      
+   }
+
+   .lista__item{
+      font-size: 1.3rem;
+   }
+
+   .dispositivos__lista{
+      display: block;
+   }
+
+   .rodape{
+      overflow-x: hidden;     
+      margin: 13em 2em 2em ;   
+   }
+ 
+   .rodape__lista{
+      display: block;
+   }
+
+   .lista__link a{
+      font-size: 0.80rem;     
+   }
+
+   .rodape__texto{
+   font-size: 0.60rem;
+   }
+}
+
