@@ -322,8 +322,7 @@ margin-bottom: 1em;
       display: block;
       background-image: none;  
       text-align: center;
-      align-items: center;
-      overflow-x: hidden;          
+      align-items: center;               
    }
    
    .container__titulo{
